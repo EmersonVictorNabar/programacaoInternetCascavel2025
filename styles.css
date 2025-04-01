@@ -1,0 +1,15 @@
+.divAlignCenter {
+    background-color: blueviolet;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+.divAlignLeft {
+    background-color:red;
+    margin:0 auto;
+    width: fit-content;
+    padding: 50px 50px;
+    border-radius: 5px;
+    position:relative;
+}
