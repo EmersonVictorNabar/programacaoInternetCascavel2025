@@ -1,0 +1,8 @@
+*{
+    --azul-escuro: #0d5188;
+    --azul-medio:#66c5e3;
+    --azul-medio:#C7e7f3;
+}
+.celulaPrincipal{
+    background-color: var(--azul-escuro)
+}
