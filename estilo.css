@@ -1,8 +1,31 @@
 *{
     --azul-escuro: #0d5188;
     --azul-medio:#66c5e3;
-    --azul-medio:#C7e7f3;
+    --azul-claro:#C7e7f3;
+}
+table{
+   width:600px; 
+   background-color:var(--azul-escuro);
+}
+th {
+    background-color: var(--azul-claro);
 }
 .celulaPrincipal{
-    background-color: var(--azul-escuro)
+    background-color: var(--azul-medio)
+}
+.posicao{
+    background-color:silver;
+}
+.cidade{
+    color:var(--azul-claro);
+    font-weight: bold;
+}
+.populacao, .celulaPrincipal, .posicao{
+color: white;
+}
+.pos10{
+    width:10%;
+}
+.pop15{
+    width: 15%;
 }
