@@ -1,0 +1,156 @@
+* {
+  --azul-escuro: #0D5188;
+  --azul-medio: #66C5E3;
+  --azul-claro: #C7E7F3;
+
+  --azul-marinho: #003366; 
+  --azul-celeste: #1398BE; 
+  --laranja: #DE9800; 
+  --cinza: #CCCCCC; 
+  --vermelho: #C91B04;
+}
+table {
+  background-color: var(--azul-escuro);
+  width: 600px;
+}
+th {
+  background-color: var(--azul-claro);
+}
+.celulaPrincipal {
+  background-color: var(--azul-medio);
+}
+.posicao {
+  background-color: silver;
+}
+.cidade {
+  color: var(--azul-claro);
+  font-weight: bold;
+}
+.populacao, .celulaPrincipal, .posicao {
+  color: white;
+}
+.pos10 {
+  width: 10%;
+}
+.pop15 {
+  width: 15%;
+}
+
+.futebol {
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  font-family: arial;
+  border-collapse: collapse;
+}
+
+.futebol th {
+  background-color: white;
+  font-size: 13px;
+  font-weight: bold;
+  color: #999999;
+  text-align: center;
+  width: 1rem;
+}
+
+.futebol .pos {
+  background-color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.futebol .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  text-align: left;
+}
+
+.futebol .points {
+  font-weight: bold;
+  color: black;
+}
+
+.futebol td {
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+
+.futebol .pos:first-child {
+  background-color: white;
+}
+
+.futebol .legenda td:first-child {
+  background-color: white;
+}
+
+.futebol td:nth-child(odd) {
+  background-color: #DDDDDD;
+}
+
+.futebol tr {
+  border: 1px solid #DDDDDD;
+}
+
+.futebol tr:nth-child(n+1):nth-child(-n+4) .pos {
+  color: var(--azul-marinho); 
+}
+.futebol tr:nth-child(n+5):nth-child(-n+6) .pos {
+  color: var(--azul-celeste); 
+}
+.futebol tr:nth-child(n+6):nth-child(-n+13) .pos {
+  color: var(--laranja); 
+}
+.futebol tr:nth-child(n+14):nth-child(-n+17) .pos {
+  color: var(--cinza); 
+}
+.futebol tr:nth-child(n+18):nth-child(-n+21) .pos {
+  color: var(--vermelho); 
+}
+
+.legenda td {
+  padding: .5rem;
+}
+
+.legend-colors, .legend-signs {
+  font-size: 10px;
+  text-align: left;
+}
+
+.legend-colors span {
+  width: 1em;
+  height: 1em;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.legend-colors .azul-escuro {
+  background-color: var(--azul-escuro);
+}
+
+.legend-colors .azul-celeste {
+  background-color: var(--azul-celeste);
+}
+
+.legend-colors .laranja {
+  background-color: var(--laranja);
+}
+
+.legend-colors .vermelho {
+  background-color: var(--vermelho);
+}
+
+.legend-colors {
+  color: #8F8F8F;
+}
+
+.legend-signs {
+  margin-top: .2rem;
+  color: #555555;
+}
+
+.legenda span {
+  font-weight: bold;
+}
