@@ -2,11 +2,7 @@ const btSomar =document.querySelector("button")
 
 btSomar.addEventListener("click", () => {
     const inputA = document.querySelector("#valueA")
-    const inputB = document.querySelector("#valueB")
-    let result = Number(inputA.value) + Number(inputB.value)
-    if (isNaN (result)) {
-        result = "Valor digitado inválido"
-    }
+    let result = Number(inputA.value) % 2 !== 0 ? "Impar" : "par"
     
     const Xpanresult = document.querySelector("span")
     Xpanresult.textContent = result
