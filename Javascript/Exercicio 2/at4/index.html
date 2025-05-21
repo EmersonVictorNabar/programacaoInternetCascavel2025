@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteiros</title>
+
+</head>
+<body>
+    <input class="input1" type="text" name="" id=""><br>
+    <input class="input2" type="text" name="" id=""><br>
+    <input class="input3" type="text" name="" id=""><br>
+    <input class="input4" type="text" name="" id=""><br>
+    <input class="input5" type="text" name="" id=""><br>
+    <span class="sp1"></span>
+    <button>Resultado</button>
+    <script>
+        const button = document.querySelector("button")
+
+        button.addEventListener("click", () => {
+            const input1 = Number(document.querySelector(".input1").value)
+            const input2 = Number(document.querySelector(".input2").value)
+            const soma = input1 + input2
+            const subtração = input1 - input2
+            const multiplicação = input1*input2
+            const divisão = input1/input2
+            const res = document.querySelector(".sp1") 
+            
+            res.textContent = `soma ${soma}/subtração ${subtração}/divisão ${divisão}/multiplicação ${multiplicação}`
+        })
+    </script>
+</body>
+</html>

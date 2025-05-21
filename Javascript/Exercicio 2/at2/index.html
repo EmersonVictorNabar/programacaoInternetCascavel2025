@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omelete</title>
+
+</head>
+<body>
+    <input type="text" name="" id=""><br>
+    <span class="sp1"></span>
+    <button>N° de pessoas</button>
+    <script>
+        const button = document.querySelector("button")
+        const porcaoOvo = 2
+        const porcaoQueijo = 50
+        button.addEventListener("click", () => {
+            const totalPessoas = Number(document.querySelector("input").value)
+            const valueeggs = totalPessoas*porcaoOvo
+            const valeucheese = totalPessoas*porcaoQueijo
+
+            const res = document.querySelector(".sp1") 
+            
+            res.textContent = `Você vai precisar de ${valueeggs} ovos e ${valeucheese}g de queijo`
+        })
+    </script>
+</body>
+</html>
