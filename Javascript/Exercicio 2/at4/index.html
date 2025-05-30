@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteiros</title>
-
+    <title>Exercise 4</title>
 </head>
+
 <body>
-    <input class="input1" type="text" name="" id=""><br>
-    <input class="input2" type="text" name="" id=""><br>
-    <input class="input3" type="text" name="" id=""><br>
-    <input class="input4" type="text" name="" id=""><br>
-    <input class="input5" type="text" name="" id=""><br>
+    <h3>Informe até 4 sabores</h3>
+    <input class="inputSabor1" type="text" name="" id=""><br>
+    <input class="inputSabor2" type="text" name="" id=""><br>
+    <input class="inputSabor3" type="text" name="" id=""><br>
+    <input class="inputSabor4" type="text" name="" id=""><br>
+    <h3>Quantidade de refris</h3>
+    <input class="inputRefri" type="text">
     <span class="sp1"></span>
-    <button>Resultado</button>
+    <button>Finalizar pedido</button>
+
     <script>
         const button = document.querySelector("button")
-
         button.addEventListener("click", () => {
-            const input1 = Number(document.querySelector(".input1").value)
-            const input2 = Number(document.querySelector(".input2").value)
-            const soma = input1 + input2
-            const subtração = input1 - input2
-            const multiplicação = input1*input2
-            const divisão = input1/input2
-            const res = document.querySelector(".sp1") 
-            
-            res.textContent = `soma ${soma}/subtração ${subtração}/divisão ${divisão}/multiplicação ${multiplicação}`
-        })
+            const inputSabor1 = document.querySelector(".inputSabor1").value.trim()
+            const inputSabor2 = document.querySelector(".inputSabor2").value.trim()
+            const inputSabor3 = document.querySelector(".inputSabor3").value.trim()
+            const inputSabor4 = document.querySelector(".inputSabor4").value.trim()
+            const inputRefri = Number(document.querySelector(".inputRefri").value)
+          
+            const listaPizza = [inputSabor1, inputSabor2, inputSabor3, inputSabor4]
+            let totalpizza = 0
+            for (let i=0; i<4; i++) { //For é um loop, baseado nas condições determinadas//
+                const valpizza = listaPizza[i]
+                if (valpizza!=="") totalpizza++ //If testa operações boleanas//
+            }
+            console.log(totalpizza) //Mostra as coisas na tela
+            const totalpedido = (totalpizza*12)+(inputRefri*7)
+            const sp1 = document.querySelector(".sp1")
+            sp1.textContent = totalpedido + " Reais" //Propriedade do elemento
+            })
     </script>
 </body>
+
 </html>
