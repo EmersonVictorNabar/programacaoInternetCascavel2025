@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho2</title>
+</head>
+
+<body>
+  <section>
+    <h2>Ex 1</h2>
+    <div>
+      X
+      <input class="X" type="text">
+      <div></div>
+      Y
+      <input class="Y" type="text">
+      <div></div>
+      Z
+      <input class="Z" type="text">
+      <div></div>
+      <button class="triangulo">Calcular</button>
+      <span class="naps"></span>
+    </div>
+  </section>
+<script>
+    const triangulo = document.querySelector('.triangulo')
+
+function FormacaoDeTriangulo() {
+  const X = Number(document.querySelector('.X').value)
+  const Y = Number(document.querySelector('.Y').value)
+  const Z = Number(document.querySelector('.Z').value)
+  let result =''
+  if (X+Y>Z){
+    result += 'Pode ser um triângulo, '
+  }else {
+    result += 'Não pode ser um triângulo, '
+  }
+  
+  result += (X===Y)&&(Y===Z) 
+    ? 'e é equilatero'
+    : (X===Z||Y===Z||X===Y)
+      ? 'é isoceles'
+      : 'é escaleno'
+   const naps = document.querySelector('.naps')
+  naps.textContent = result
+}
+triangulo.addEventListener("click", FormacaoDeTriangulo)
+</script>
+
+</body>
+
+</html>
